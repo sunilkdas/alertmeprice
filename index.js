@@ -44,15 +44,15 @@ setInterval(function() {
                     service: 'gmail',
                     secure: false, // true for 465, false for other ports
                     auth: {
-                        user: "sadramuk.linus@gmail.com", // generated ethereal user
-                        pass: "skdspd2103" // generated ethereal password
+                        user: "#youremail", // generated ethereal user
+                        pass: "#yourpassword" // generated ethereal password
                     }
                 });
 
                 // send mail with defined transport object
                 let info = await transporter.sendMail({
                     from: 'automata', // sender address
-                    to: 'b311055@iiit-bh.ac.in',
+                    to: '#toemail',
                     // list of receivers
                     subject: 'Nikon D3500 Price', // Subject line
                     text: 'Nikon D3500 Price', // plain text body
